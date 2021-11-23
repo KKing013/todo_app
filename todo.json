@@ -1,0 +1,20 @@
+{
+    "Buy cat": {
+        "completed": false
+    },
+    "Buy rat": {
+        "completed": false
+    },
+    "Buy dog": {
+        "completed": false
+    },
+    "Buy snake": {
+        "completed": false
+    },
+    "Buy giraffe": {
+        "completed": false
+    },
+    "Buy owl": {
+        "completed": false
+    }
+}
