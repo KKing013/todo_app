@@ -1,20 +1,26 @@
 {
-    "Buy cat": {
-        "completed": false
-    },
     "Buy rat": {
-        "completed": false
-    },
-    "Buy dog": {
-        "completed": false
+        "completed": true
     },
     "Buy snake": {
-        "completed": false
+        "completed": true
     },
     "Buy giraffe": {
-        "completed": false
+        "completed": true
     },
     "Buy owl": {
+        "completed": true
+    },
+    "test": {
+        "completed": true
+    },
+    "assadsa": {
+        "completed": true
+    },
+    "sdasadsad": {
+        "completed": false
+    },
+    "dfgfgddfg": {
         "completed": false
     }
 }

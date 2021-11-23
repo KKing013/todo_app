@@ -3,9 +3,13 @@
 $todos = [];
 
 if (file_exists('todo.json')) {
+   
     $json = file_get_contents('todo.json');
+   
     $todos = json_decode($json, true);
 }
+
+
 
 ?>
 
@@ -19,21 +23,21 @@ if (file_exists('todo.json')) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>todoapp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-dark text-white">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <script src="" async defer></script>
 
+    <div class="container">
     <form action="newtodo.php" method="POST">
-        <input class="" type="text" name="todo_name" placeholder="Enter your todo">
+        <input type="text" name="todo_name" placeholder="Enter your todo">
         <button class="btn btn-outline-primary">New Todo</button>
     </form>
     <br>
@@ -55,6 +59,8 @@ if (file_exists('todo.json')) {
 
         </div>
     <?php endforeach; ?>
+
+    </div>
 
     <script>
         const checkboxes = document.querySelectorAll('input[type=checkbox]');
